@@ -118,7 +118,7 @@ const searchRestaurants = async (event) => {
 }
 
 const main = () => {
-    const inputElement = document.querySelector(".search")
+    const inputElement = document.querySelector("#search")
     inputElement.addEventListener("keydown", searchRestaurants)
 
 };
