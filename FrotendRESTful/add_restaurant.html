@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <title>Grab Restaurant</title>
     <meta charset="utf-8" />
@@ -8,13 +7,13 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-
+   
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link  href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;300&display=swap"
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;300&display=swap"
       rel="stylesheet"
     />
-
 
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,700"
@@ -25,10 +24,11 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    
+
+    <link rel="stylesheet" href="css/add_restaurant.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
+  <body onload="add()">
     <div class="container">
       <div class="row justify-content-between">
         <div class="col">
@@ -148,36 +148,63 @@
         </div>
       </div>
     </nav>
-    <!-- END nav -->
 
-    <!-- </section> -->
-    <section class="banner">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-md-offset-3">
-            <!-- <h4>พบกับอาหารอร่อยได้ที่นี่</h4> -->
-            <h2>Grab Restaurant</h2>
-            <p>เลือกดูรายการร้านอาหารและผู้ใช้ทั้งหมดได้เลย</p>
-            <div id="primary-button">
-				<div class="grup-button">
-              <div class="primary-button">
-                <a href="all_restaurant.html" class="scroll-link" data-id="book-table"
-                  >ร้านอาหาร</a
-                >
+    <!----------------------------- END nav ------------------------------- -->
+
+    <!--------------- </section> ---------------->
+    <div class="grid-container">
+      <div class="row form">
+        <div class="col-6 card justify-content-center">
+          <h5 class="card-header">เพิ่มข้อมูลร้านอาหาร</h5>
+          <div class="card-body">
+            <form>
+             
+              <div class="form-group">
+                <label for="id">Restaurant ID</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="id"
+                  placeholder="Enter Restaurant ID"
+                />
               </div>
-			</div>
-			<div class="grup-button">
-              <div class="primary-button">
-                <a href="#" class="scroll-link" data-id="book-table"
-                  >ผู้ใช้</a
-                >
+              <div class="form-group">
+                <label for="name">Restaurant Name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Enter Restaurant Name"
+                />
               </div>
-			</div>
-            </div>
+              <div class="form-group">
+                <label for="type">Restaurant Type</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="type"
+                  placeholder="Enter Restaurant Type"
+                />
+              </div>
+              <div class="form-group">
+                <label for="imageurl">Restaurant Image Url</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="imageurl"
+                  placeholder="Enter Restaurant Imageurl"
+                />
+              </div>
+              <a href="" class="btn btn-success" onclick="add()"
+                >Add Restaurant</a
+              >
+              <a href="index.html" class="btn btn-danger">Cancel</a>
+           
+            </form>
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
     <!-- <div class="container">
       <div class="row">
@@ -189,6 +216,6 @@
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/restaurant/add_restaurant.js"></script>
   </body>
 </html>

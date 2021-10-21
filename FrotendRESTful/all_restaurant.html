@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
     <title>Grab Restaurant</title>
     <meta charset="utf-8" />
@@ -11,24 +10,25 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link  href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;300&display=swap"
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;300&display=swap"
       rel="stylesheet"
     />
-
 
     <link
       href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,700"
       rel="stylesheet"
       type="text/css"
     />
+
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    
+    <link rel="stylesheet" href="css/all_restaurant.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
+  <body onload="init()">
     <div class="container">
       <div class="row justify-content-between">
         <div class="col">
@@ -151,33 +151,21 @@
     <!-- END nav -->
 
     <!-- </section> -->
-    <section class="banner">
-      <div class="container">
+    <div class="container">
+        <h1>Grad Restaurant Application</h1>
+        <br />
+        <a class="btn btn-primary" href="index.html" role="button">Search</a>
+        <a class="btn btn-success" href="add.html" role="button">Add Restaurant</a>
+
+        <br>
+        <br>
+
         <div class="row">
-          <div class="col-md-6 col-md-offset-3">
-            <!-- <h4>พบกับอาหารอร่อยได้ที่นี่</h4> -->
-            <h2>Grab Restaurant</h2>
-            <p>เลือกดูรายการร้านอาหารและผู้ใช้ทั้งหมดได้เลย</p>
-            <div id="primary-button">
-				<div class="grup-button">
-              <div class="primary-button">
-                <a href="all_restaurant.html" class="scroll-link" data-id="book-table"
-                  >ร้านอาหาร</a
-                >
-              </div>
-			</div>
-			<div class="grup-button">
-              <div class="primary-button">
-                <a href="#" class="scroll-link" data-id="book-table"
-                  >ผู้ใช้</a
-                >
-              </div>
-			</div>
+            <div class="restaurants">
+
             </div>
-          </div>
         </div>
-      </div>
-    </section>
+    </div>
 
     <!-- <div class="container">
       <div class="row">
@@ -189,6 +177,6 @@
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/restaurant/all_restaurant.js"></script>
   </body>
 </html>
