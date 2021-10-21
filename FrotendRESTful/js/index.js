@@ -1,4 +1,4 @@
-//แก้ไข ข้อมูล
+//แก้ไข ข้อมูล ผ่าน API(Postman)
 const editRestaurants = async (id) => {
     if (id) {
         try {
@@ -55,7 +55,7 @@ const deleteRestaurants = async (id) => {
     }
 };
 
-//สร้าง tag สำหรับโชว์
+//สร้าง div card สำหรับนำข้อมูลมาโชว์
 const addRestaurant = (element) => {
     const item = document.createElement("div");
     item.className = "card";
