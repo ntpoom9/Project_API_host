@@ -6,9 +6,10 @@
   
   body {
     margin: 0;
-    padding: 2rem 5rem;
+    /* padding: 2rem 5rem; */
     text-align: center;
-    background-image: linear-gradient(135deg, rgba(24, 0, 112, 1) 0%, rgba(138, 92, 245, 1) 40%, rgba(227, 120, 224, 1) 70%, rgba(255, 0, 128, 1) 100%);
+    /* background-image: linear-gradient(135deg, rgba(24, 0, 112, 1) 0%, rgba(138, 92, 245, 1) 40%, rgba(227, 120, 224, 1) 70%, rgba(255, 0, 128, 1) 100%); */
+    background-color: #bdbdbd;
     color: black;
     /* font-family: "helvetica neue", sans-serif; */
     font-family: 'Kanit', sans-serif;
@@ -50,6 +51,9 @@
 
 .card-title{
 font-size: 18px;
+font-family: 'Kanit', sans-serif;
+font-weight: bold;
+
 }
 
 .content-data{
@@ -62,4 +66,16 @@ font-weight: bold;
 }
 .content-cus{
     font-weight: normal;
+}
+
+
+/* banner */
+.banner_all_customer {
+  padding: 3rem 0;
+  background-image: url(../img/bg_all_customer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  text-align: center;
+  height: auto;
 }
