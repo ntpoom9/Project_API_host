@@ -8,6 +8,17 @@ CREATE TABLE `restaurants` (
     PRIMARY KEY(id)
 ) ;
 
+CREATE TABLE `customer` (
+  `customer_id` int(11) NOT NULL AUTO_INCREMENT,
+  `customer_name` varchar(250) NOT NULL,
+  `phonenumber` varchar(250) NOT NULL,
+  `email` varchar(250) NOT NULL,
+  `address` varchar(250) NOT NULL,
+    PRIMARY KEY(customer_id)
+) ;
+
+
+
 INSERT INTO `restaurants` (`id`, `name`, `type`, `imgURL`) VALUES
 (1, 'กาแฟชาวดอย - อนุสาวรีย์ประชาธิปไตย ', 'เครื่องดื่ม กาแฟ', 'https://d1sag4ddilekf6.azureedge.net/compressed/merchants/3-C2TWL7NAEKLGC2/hero/7777999515394bb3bb068565d4dcbef3_1622966034570936069.jpeg'),
 (2, 'ข้าวมันไก่ตลาดนางเลิ้ง เจ๊สวย - ตลาดนางเลิ้ง', 'ข้าวหน้า', 'https://d1sag4ddilekf6.azureedge.net/compressed/merchants/3-C2NYEVLJJE4TVN/hero/cd266f62455843638a8e65584d9bfa9f_1619674223437993763.jpeg'),
