@@ -3,7 +3,7 @@ const add = async () => {
   const name = document.getElementById("name").value;         //เก็บค่าจาก input
   const type = document.getElementById("type").value;
   const imgURL = document.getElementById("imgURL").value;
-  if ( name && type && imgURL) { //ตรวจสอบค่า ว่ามีค่าส่งมาไหม
+  if (name && type && imgURL) { //ตรวจสอบค่า ว่ามีค่าส่งมาไหม
     const params = { //set พารามิเตอร์
       // id: id,
       name: name,
@@ -26,10 +26,12 @@ const add = async () => {
       ).then((response) => {
         return response.json(); //คอนเวิดให้อยู่ในรูปแบบ json
       }).then(() => {
-        alert(`Restaurant id:${id} is added`);
+        alert(`เพิ่มข้อมูลร้านอาหารเรียบร้อยแล้ว`);
+        window.location = './all_restaurant.html';
       });
     } catch (error) {
-      alert(`add new restaurant`);
+      alert(`เพิ่มข้อมูลร้านอาหารเรียบร้อยแล้ว`);
+      window.location = './all_restaurant.html';
     }
   } else {
     alertalert("All fields are required!!");

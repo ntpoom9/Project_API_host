@@ -8387,8 +8387,6 @@ h1, h2, h3, h4, h5,
       height: 600px;
   }
   .banner h2 {
-    font-family: 'Spectral', serif;
-    /* font-family: 'Kanit', sans-serif; */
     font-size: 44px;
     font-weight: 600;
     color: #fff;

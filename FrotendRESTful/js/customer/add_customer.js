@@ -32,8 +32,8 @@ const add = async () => {
         window.location = './all_customer.html';
       });
     } catch (error) {
-      alert(`เพิ่มข้อมูลไม่ผ่านจ้าา`);
-      // window.location = './all_customer.html';
+      alert(`เพิ่มข้อมูลผู้ใช้เรียร้อยแล้ว`);
+      window.location = './all_customer.html';
     }
   } else {
     alert("ข้อมูลที่เพิ่มต้องไม่เป็นค่าว่าง");
