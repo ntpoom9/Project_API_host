@@ -15,15 +15,15 @@ const init = async () => {
 const addRestaurants = (element) => {
     const item = document.createElement("div"); //สร้าง div
     item.className = "card"; //กำหนดชื่อ class
-    item.style = "width: 20rem;" //กำหนด style
+     
     //6-14 เป็นการกำหนด HTML มีการแทรก ข้อมูลลงไปด้วย
     const card = `    
-    <img src="${element.imgURL}" class="card-img-top" alt="${element.name}">
+    <img src="${element.imgURL}" class="card__img" alt="${element.name}">
     <div class="card-body">
       <h5 class="card-title">${element.name}</h5>
       <p class="card-text">${element.type}</p>
-      <a href="#" class="btn btn-danger" onclick="deleteRestaurant(${element.id})">Delete</a>
-      <a href="edit_restaurant.html?id=${element.id}" class="btn btn-warning">Edit</a>
+      <a href="#" class="btn btn-danger" onclick="deleteRestaurant(${element.id})">ลบ</a>
+      <a href="edit_restaurant.html?id=${element.id}" class="btn btn-warning">แก้ไข</a>
     </div>
     `;
     item.innerHTML = card;  //เอาไปแทรกที่card ลงใน div
