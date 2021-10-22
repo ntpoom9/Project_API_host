@@ -56,8 +56,6 @@
 
 
 
-
-
 .customer{
     display: grid;
     grid-template-columns: repeat(4 ,1fr);
@@ -96,3 +94,28 @@ font-weight: bold;
   
 }
 
+@media (max-width:990px) {
+  center{
+    width:auto;
+    height: 100px !important;
+  }
+  .card-header{
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.label_add{
+  float: left;
+  margin: 0.5rem 0;
+  /* font-weight: bold; */
+  color: #ffffff;
+  font-size: 12px;
+}
+
+.form-control{
+  width: auto;
+  font-size: 12px;
+}
+
+}
+  
