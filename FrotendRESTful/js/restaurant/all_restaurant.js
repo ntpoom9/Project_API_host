@@ -15,7 +15,7 @@ const init = async () => {
 const addRestaurants = (element) => {
     const item = document.createElement("div"); //สร้าง div
     item.className = "card"; //กำหนดชื่อ class
-     
+
     //6-14 เป็นการกำหนด HTML มีการแทรก ข้อมูลลงไปด้วย
     const card = `    
     <img src="${element.imgURL}" class="card__img" alt="${element.name}">
@@ -51,7 +51,7 @@ const deleteRestaurant = async (id) => { //รับไอดีที่ส่�
             }).then((response) => {
                 return response.json();  //ส่งค่าในรูปแบบ json
             }).then(() => {
-                alert(`Restaurant id:${id} is Delete`); //แสดง alter ว่าลบแล้ว
+                alert(`ลบข้อมูลร้านอาหาร ไอดีที่ ${id} เรียบร้อยแล้ว`); //แสดง alter ว่าลบแล้ว
                 location.reload(); //load หน้าใหม่หลัง Delete
             }
             );

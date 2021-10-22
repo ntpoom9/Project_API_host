@@ -25,8 +25,8 @@ const addCustomer = (element) => {
       </div>
       
 
-      <a href="#" class="btn btn-danger" onclick="deleteCustomer(${element.customer_id})">ลบข้อมูล</a>
-      <a href="edit_customer.html?customer_id=${element.customer_id}" class="btn btn-warning">แก้ไขข้อมูล</a>
+      <a href="#" class="btn btn-danger" onclick="deleteCustomer(${element.customer_id})">ลบ</a>
+      <a href="edit_customer.html?customer_id=${element.customer_id}" class="btn btn-warning">แก้ไข</a>
     </div>
     `;
     item.innerHTML = card;  //เอาไปแทรกที่card ลงใน div
@@ -56,7 +56,7 @@ const deleteCustomer = async (customer_id) => { //รับไอดีที่
             }).then((response) => {
                 return response.json();  //ส่งค่าในรูปแบบ json
             }).then(() => {
-                alert(`Customer ID: ${customer_id} is Deleted`); //แสดง alter ว่าลบแล้ว
+                alert(`ลบข้อมูลผู้ใช้ ไอดีที่ ${customer_id} เรียบร้อยแล้ว`); //แสดง alter ว่าลบแล้ว
                 location.reload(); //load หน้าใหม่หลัง Delete
             }
             );

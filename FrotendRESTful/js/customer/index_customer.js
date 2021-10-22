@@ -1,59 +1,66 @@
-//แก้ไข ข้อมูล ผ่าน API(Postman)
-// const editRestaurants = async (id) => {
-//     if (id) {
-//         try {
-//             const restaurants = await fetch("http://localhost:5000/apis/restaurants/" + id,
-//                 {
-//                     method: "PUT",
-//                     mode: "cors",
-//                     cache: "no-cache",
-//                     credentials: "same-origin",
-//                     headers: {
-//                         "Content-Type": "application/json",
-//                     },
-//                 }).then((response) => {
-//                     return response.json();
-//                 }).then(() => {
-//                     alert(`แก้ไขข้อมูลของ id:${id} เรียบร้อย`)
-//                     location.reload();
-//                 });
+// แก้ไขข้อมูล อัพเดทข้อมูลใหม่
+const edit = async () => {
+    const customer_id = document.getElementById("customer_id").value;
+    if (customer_id) {
+        const params = {
+            // id: document.getElementById("id").value,
+            customer_name: document.getElementById("customer_name").value,
+            phonenumber: document.getElementById("phonenumber").value,
+            email: document.getElementById("email").value,
+            address: document.getElementById("address").value,
+        };
 
-//         } catch (error) {
-//             alert(`ไม่มี id:${id}`)
-//         }
-//     } else {
-//         alert("ไม่มี id นะ")
-//     }
-// };
-
+        const customer = await fetch("http://localhost:5000/apis/customer/" + customer_id,
+            {
+                method: "PUT",
+                mode: "cors",
+                cache: "no-cache",
+                credentials: "same-origin",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                //เพิ่ม body แปลง json เป็น text เข้าไปใน DB
+                body: JSON.stringify(params),
+            }
+        ).then((response) => {
+            return response.json();
+        }).then(() => {
+            alert(`อัพเดทข้อมูลผู้ใช้ ไอดีผู้ใช้ที่ ${customer_id} เรียบร้อยแล้ว!`);
+            window.location = './all_customer.html';
+        });
+    }
+    else {
+        // alert(`customer ID is missing!`);
+    }
+}
 
 //ลบ ข้อมูล
-// const deleteRestaurants = async (id) => {
-//     if (id) {
-//         try {
-//             const restaurants = await fetch("http://localhost:5000/apis/restaurants/" + id,
-//                 {
-//                     method: "DELETE",
-//                     mode: "cors",
-//                     cache: "no-cache",
-//                     credentials: "same-origin",
-//                     headers: {
-//                         "Content-Type": "application/json",
-//                     },
-//                 }).then((response) => {
-//                     return response.json();
-//                 }).then(() => {
-//                     alert(`ลบ id:${id} ลบแล้วจ้า`)
-//                     location.reload();
-//                 });
-
-//         } catch (error) {
-//             alert(`ไม่มี id:${id}`)
-//         }
-//     } else {
-//         alert("ไม่มี id นะ ius")
-//     }
-// };
+const deleteCustomer = async (customer_id) => { //รับไอดีที่ส่งมา
+    if (customer_id) { //เช็ค customer_id
+        try {
+            const restaurant = await fetch(
+                "http://localhost:5000/apis/customer/" + customer_id, { //ต่อไอดีที่ส่งมาจากการกำปุ่ม Delete 
+                method: "DELETE",          //DELETE
+                mode: "cors",
+                cache: "no-cache",               //6-8 บอกว่า server อยู่ที่เดียวกัน
+                credentals: "same-origin",
+                headers: {
+                    "Content-type": "application/json"  //ข้อมุลอยู่ในรูปแบบ json
+                },
+            }).then((response) => {
+                return response.json();  //ส่งค่าในรูปแบบ json
+            }).then(() => {
+                alert(`ลบข้อมูลผู้ใช้ ไอดีที่ ${customer_id} เรียบร้อยแล้ว`); //แสดง alter ว่าลบแล้ว
+                location.reload(); //load หน้าใหม่หลัง Delete
+            }
+            );
+        } catch (error) {
+            alert(`Customer customer_id:${customer_id} not found!!`);
+        }
+    } else {
+        alert("Customer customer_id is missing")
+    }
+}
 
 //สร้าง div card สำหรับนำข้อมูลมาโชว์
 const addCustomerByName = (element) => {

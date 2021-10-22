@@ -64,7 +64,7 @@ const edit = async () => {
         ).then((response) => {
             return response.json();
         }).then(() => {
-            alert(`อัพเดทข้อมูลผู้ใช้ ไอดีผู้ใช้ : ${customer_id} เรียบร้อยแล้ว!`);
+            alert(`อัพเดทข้อมูลผู้ใช้ ไอดีผู้ใช้ที่ ${customer_id} เรียบร้อยแล้ว!`);
             window.location = './all_customer.html';
         });
     }

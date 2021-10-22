@@ -60,7 +60,7 @@ const edit = async () => {
         ).then((response) => {
             return response.json();
         }).then(() => {
-            alert(`อัพเดทข้อมูลร้านอาหาร ไอดีร้านอาหาร : ${id} เรียบร้อยแล้ว!`);
+            alert(`อัพเดทข้อมูลร้านอาหาร ไอดีร้านอาหารที่ ${id} เรียบร้อยแล้ว!`);
             window.location = './all_restaurant.html';
         });
     }
