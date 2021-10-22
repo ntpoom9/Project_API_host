@@ -23,7 +23,7 @@ const addRestaurants = (element) => {
       <h5 class="card-title">${element.name}</h5>
       <p class="card-text">${element.type}</p>
       <a href="#" class="btn btn-danger" onclick="deleteRestaurant(${element.id})">Delete</a>
-      <a href="edit.html?id=${element.id}" class="btn btn-warning">Edit</a>
+      <a href="edit_restaurant.html?id=${element.id}" class="btn btn-warning">Edit</a>
     </div>
     `;
     item.innerHTML = card;  //เอาไปแทรกที่card ลงใน div
