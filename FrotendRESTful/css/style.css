@@ -8141,7 +8141,7 @@ body {
   line-height: 1.8;
   font-weight: normal;
   background: #bdbdbd;
-  color: gray; }
+  /* color: gray;*/ } 
 
 a {
   -webkit-transition: .3s all ease;
@@ -8183,7 +8183,7 @@ h1, h2, h3, h4, h5,
   background-position: center center; }
 
 .ftco-navbar-light {
-  background: #202040 !important;
+  /* background: #202040 !important; */
   z-index: 3;
   padding: 0; }
   @media (max-width: 991.98px) {
