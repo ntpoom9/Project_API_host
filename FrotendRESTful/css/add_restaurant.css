@@ -1,0 +1,96 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    margin: 0;
+    /* padding: 2rem 5rem; */
+    text-align: center;
+    /* background-image: linear-gradient(135deg, rgba(24, 0, 112, 1) 0%, rgba(138, 92, 245, 1) 40%, rgba(227, 120, 224, 1) 70%, rgba(255, 0, 128, 1) 100%); */
+    background-color: #bdbdbd;
+    color: black;
+    /* font-family: "helvetica neue", sans-serif; */
+    font-family: 'Kanit', sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+  }
+
+  h1 {
+    /* font-family: cursive; */
+    text-align: center;
+    color: white;
+    font-size: 2em;
+  }
+  
+
+  
+  .button {
+    padding: 8px 0;
+  }
+  .card {
+    margin-right: 5px;
+    margin-bottom: 5px;
+    width: 18rem;
+  }
+  
+  .card:last-of-type {
+    margin-right: 0;
+    /* background-image: linear-gradient(90deg, rgba(213, 147, 7, 1) 0%, rgba(251, 86, 231, 1) 100%);    border-radius: 10px; */
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgb(181, 175, 0) 100%);  }
+  
+  .card-header{
+    color: #ffffff;
+}
+  .form {
+    justify-content: center;
+  }
+
+  .label_add{
+    float: left;
+    margin: 0.5rem 0;
+    /* font-weight: bold; */
+    color: #ffffff;
+  }
+
+
+
+
+
+.customer{
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+    grid-gap: 1rem;
+}
+
+.card-title{
+font-size: 18px;
+font-family: 'Kanit', sans-serif;
+font-weight: bold;
+
+}
+
+.content-data{
+    text-align: left;
+}
+
+.topic-cus{
+font-size: 14px;
+font-weight: bold;
+}
+.content-cus{
+    font-weight: normal;
+}
+
+.grid-container{
+    background-image: url(../img/add_bg.jpg);
+    padding: 3rem 0;
+  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    height: auto;
+
+}

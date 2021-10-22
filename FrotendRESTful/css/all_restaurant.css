@@ -1,0 +1,59 @@
+.banner_allRest{
+    background-image: url(../img/book-bg.jpg);
+    display: grid;
+    padding: 3rem 0;
+    text-align: center;
+}
+.restaurants{
+    display: grid;
+    grid-template-columns: repeat(4 ,1fr);
+    grid-gap: 1rem;
+}
+.btn-danger,.btn-warning{
+ width: 60px;
+}
+.card-title{
+height: 50px;
+padding-bottom: 5px;
+}
+.card-text{
+    height: 40px;
+}
+@media (max-width:992px){
+    .restaurants{
+        display: grid;
+        grid-template-columns: repeat(3 ,1fr);
+        grid-gap: 1rem;
+    }
+}
+@media (max-width:768px){
+    .restaurants{
+        display: grid;
+        grid-template-columns: repeat(2 ,1fr);
+        grid-gap: 1rem;
+    }
+}
+@media (max-width:766px){
+    .restaurants{
+        display: grid;
+        grid-template-columns: repeat(2 ,1fr);
+        grid-gap: 1rem;
+        padding: 5px;
+    }
+}
+@media (max-width:576px){
+    .restaurants{
+        display: grid;
+        grid-template-columns: repeat(2 ,1fr);
+        grid-gap: 0.3rem;
+        padding: 5px;
+    }
+}
+@media (max-width:480px){
+    .restaurants{
+        display: grid;
+        grid-template-columns: repeat(1 ,1fr);
+        grid-gap: 3rem;
+         padding: 0 50px
+    }
+}
