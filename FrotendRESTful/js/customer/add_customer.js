@@ -6,7 +6,7 @@ const add = async () => {
   const address = document.getElementById("address").value;
   if (customer_name && phonenumber && email && address) { //ตรวจสอบค่า ว่ามีค่าส่งมาไหม
     const params = { //set พารามิเตอร์
-      customer_id: customer_id,
+      // customer_id: customer_id,
       customer_name: customer_name,
       phonenumber: phonenumber,
       email: email,
@@ -32,8 +32,8 @@ const add = async () => {
         window.location = './all_customer.html';
       });
     } catch (error) {
-      alert(`เพิ่มข้อมูลผู้ใช้เรียร้อยแล้ว`);
-      // alert(window.location = './all_customer.html');
+      alert(`เพิ่มข้อมูลไม่ผ่านจ้าา`);
+      // window.location = './all_customer.html';
     }
   } else {
     alert("ข้อมูลที่เพิ่มต้องไม่เป็นค่าว่าง");

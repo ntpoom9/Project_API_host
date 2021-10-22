@@ -17,6 +17,10 @@
     <link rel="stylesheet" href="css/edit_customer.css" />
     <!-- css banner & navbar  -->
     <link rel="stylesheet" href="css/style.css" />
+    <!-- icon  -->
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"> -->
+
 
 </head>
 
@@ -80,7 +84,7 @@
                         <div class="dropdown-menu" aria-labelledby="dropdown04">
                             <a class="dropdown-item" href="all_customer.html">แสดงผู้ใช้ทั้งหมด</a>
                             <a class="dropdown-item" href="add_customer.html">เพิ่มข้อมูลผู้ใช้</a>
-                            <a class="dropdown-item" href="edit_customer.html">แก้ไขข้อมูลผู้ใช้</a>
+                            <a class="dropdown-item" href="all_customer.html">แก้ไขข้อมูลผู้ใช้</a>
                         </div>
                     </li>
                     <!-- <li class="nav-item"><a href="#" class="nav-link">Catalog</a></li>
@@ -103,9 +107,9 @@
                             <div class="card-body">
                                 <form>
 
-
-                                    <input type="hidden" class="form-control" id="customer_id" placeholder="กรอก ID"
-                                        value="">
+                                    <label class="label_add">ไอดีลูกค้า</label>
+                                    <input type="text" class="form-control" id="customer_id" placeholder="กรอก ID"
+                                        disabled>
 
                                     <label class="label_add">ชื่อลูกค้า</label>
                                     <input type="text" class="form-control" id="customer_name"
