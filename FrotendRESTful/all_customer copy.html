@@ -14,7 +14,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,700" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
     <!-- css me  -->
-    <link rel="stylesheet" href="css/edit_customer.css" />
+    <link rel="stylesheet" href="css/all_customer.css" />
     <!-- css banner & navbar  -->
     <link rel="stylesheet" href="css/style.css" />
 
@@ -65,6 +65,7 @@
                     <li class="nav-item active">
                         <a href="index.html" class="nav-link">หน้าหลัก</a>
                     </li>
+
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">จัดการร้านอาหาร</a>
@@ -93,45 +94,20 @@
     <!-- END nav -->
 
     <!-- </section> -->
-    <section class="banner_edit_customer">
+    <section class="banner_all_customer">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-md-offset-3">
-                    <center>
-                        <div class="col-6 card justify-content-center">
-                            <h5 class="card-header">แบบฟอร์มแก้ไขข้อมูลผู้ใช้</h5>
-                            <div class="card-body">
-                                <form>
+                <div class="col-md-6 col-md-offset-3" id="form_add">
+                    <div class="customer">
 
-
-                                    <input type="hidden" class="form-control" id="customer_id" placeholder="กรอก ID"
-                                        value="">
-
-                                    <label class="label_add">ชื่อลูกค้า</label>
-                                    <input type="text" class="form-control" id="customer_name"
-                                        placeholder="กรอกชื่อลูกค้า">
-                                    <label class="label_add">เบอร์โทรติดต่อ</label>
-                                    <input type="text" class="form-control" id="phonenumber"
-                                        placeholder="กรอกเบอร์โทรติดต่อ">
-                                    <label class="label_add">อีเมล</label>
-                                    <input type="text" class="form-control" id="email" placeholder="กรอกอีเมล">
-                                    <label class="label_add">ที่อยู่</label>
-                                    <input type="text" class="form-control" id="address" placeholder="กรอกที่อยู่"><br>
-                                    <a href="" class="btn btn-warning" onclick="edit()">บันทึก</a>
-                                    <a href="all_customer.html" class="btn btn-danger">ยกเลิก</a>
-                                </form>
-                            </div>
-                        </div>
-                    </center>
-
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
 
-    <script src="js/customer/edit_customer.js"></script>
-
+    <script src="js/customer/all_customer.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.min.js"></script>

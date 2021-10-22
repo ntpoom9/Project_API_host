@@ -13,14 +13,11 @@
 
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,700" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <!-- css me  -->
-    <link rel="stylesheet" href="css/edit_customer.css" />
-    <!-- css banner & navbar  -->
-    <link rel="stylesheet" href="css/style.css" />
 
+    <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body onload="init()">
+<body>
     <div class="container">
         <div class="row justify-content-between">
             <div class="col">
@@ -52,14 +49,14 @@
                 aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="fa fa-bars"></span> Menu
             </button>
-            <!-- <form action="#" class="searchform order-lg-last">
+            <form action="#" class="searchform order-lg-last">
                 <div class="form-group d-flex">
                     <input type="text" id="search" class="form-control pl-3" placeholder="ค้นหาร้านอาหาร" />
                     <button type="submit" placeholder="" class="form-control search">
                         <span class="fa fa-search"></span>
                     </button>
                 </div>
-            </form> -->
+            </form>
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
@@ -78,9 +75,9 @@
                         <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-toggle="dropdown"
                             aria-haspopup="true" aria-expanded="false">จัดการผู้ใช้</a>
                         <div class="dropdown-menu" aria-labelledby="dropdown04">
-                            <a class="dropdown-item" href="all_customer.html">แสดงผู้ใช้ทั้งหมด</a>
-                            <a class="dropdown-item" href="add_customer.html">เพิ่มข้อมูลผู้ใช้</a>
-                            <a class="dropdown-item" href="edit_customer.html">แก้ไขข้อมูลผู้ใช้</a>
+                            <a class="dropdown-item" href="all.html">แสดงผู้ใช้ทั้งหมด</a>
+                            <a class="dropdown-item" href="add.html">เพิ่มข้อมูลผู้ใช้</a>
+                            <a class="dropdown-item" href="edit.html">แก้ไขข้อมูลผู้ใช้</a>
                         </div>
                     </li>
                     <!-- <li class="nav-item"><a href="#" class="nav-link">Catalog</a></li>
@@ -93,49 +90,28 @@
     <!-- END nav -->
 
     <!-- </section> -->
-    <section class="banner_edit_customer">
+    <section class="banner">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-md-offset-3">
-                    <center>
-                        <div class="col-6 card justify-content-center">
-                            <h5 class="card-header">แบบฟอร์มแก้ไขข้อมูลผู้ใช้</h5>
-                            <div class="card-body">
-                                <form>
-
-
-                                    <input type="hidden" class="form-control" id="customer_id" placeholder="กรอก ID"
-                                        value="">
-
-                                    <label class="label_add">ชื่อลูกค้า</label>
-                                    <input type="text" class="form-control" id="customer_name"
-                                        placeholder="กรอกชื่อลูกค้า">
-                                    <label class="label_add">เบอร์โทรติดต่อ</label>
-                                    <input type="text" class="form-control" id="phonenumber"
-                                        placeholder="กรอกเบอร์โทรติดต่อ">
-                                    <label class="label_add">อีเมล</label>
-                                    <input type="text" class="form-control" id="email" placeholder="กรอกอีเมล">
-                                    <label class="label_add">ที่อยู่</label>
-                                    <input type="text" class="form-control" id="address" placeholder="กรอกที่อยู่"><br>
-                                    <a href="" class="btn btn-warning" onclick="edit()">บันทึก</a>
-                                    <a href="all_customer.html" class="btn btn-danger">ยกเลิก</a>
-                                </form>
-                            </div>
-                        </div>
-                    </center>
-
-                </div>
+                <!-- <div class="restaurants">
+                    <div class="restaurants"></div> -->
             </div>
         </div>
     </section>
 
-
-    <script src="js/customer/edit_customer.js"></script>
+    <!-- <div class="container">
+      <div class="row">
+        <div class="restaurants"></div>
+      </div>
+    </div> -->
 
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
+
+    <script src="js/index.js"></script>
+    <script src="js/customer/index_customer.js"></script>
 
 </body>
 

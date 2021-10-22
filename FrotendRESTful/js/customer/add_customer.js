@@ -28,14 +28,14 @@ const add = async () => {
       ).then((response) => {
         return response.json(); //คอนเวิดให้อยู่ในรูปแบบ json
       }).then(() => {
-        alert(`add new customer susuccessfully`);
+        alert(`เพิ่มข้อมูลผู้ใช้เรียร้อยแล้ว`);
         window.location = './all_customer.html';
       });
     } catch (error) {
-      alert(`add new customer susuccessfully`);
+      alert(`เพิ่มข้อมูลผู้ใช้เรียร้อยแล้ว`);
       // alert(window.location = './all_customer.html');
     }
   } else {
-    alert("All fields are required!!");
+    alert("ข้อมูลที่เพิ่มต้องไม่เป็นค่าว่าง");
   }
 };

@@ -25,8 +25,8 @@ const addCustomer = (element) => {
       </div>
       
 
-      <a href="#" class="btn btn-danger" onclick="deleteCustomer(${element.customer_id})">Delete</a>
-      <a href="edit_customer.html?customer_id=${element.customer_id}" class="btn btn-warning">Edit</a>
+      <a href="#" class="btn btn-danger" onclick="deleteCustomer(${element.customer_id})">ลบข้อมูล</a>
+      <a href="edit_customer.html?customer_id=${element.customer_id}" class="btn btn-warning">แก้ไขข้อมูล</a>
     </div>
     `;
     item.innerHTML = card;  //เอาไปแทรกที่card ลงใน div
