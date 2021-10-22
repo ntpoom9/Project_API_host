@@ -50,7 +50,7 @@ Customer.getById = (CustomerId, result) => {
 
 Customer.getAll = (result) => {
     // SELECT * FROM customer  
-    sql.query(" SELECT * FROM customer", (err, res) => {
+    sql.query(`SELECT * FROM customer`, (err, res) => {
         if (err) {
             console.log("error: ", err);
             result(err, null);
