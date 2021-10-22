@@ -42,7 +42,7 @@
   .card:last-of-type {
     margin-right: 0;
     /* background-image: linear-gradient(90deg, rgba(0, 2, 92, 1) 0%, rgba(146, 24, 2, 1) 100%);    border-radius: 10px; */
-    background-image: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 110, 255, 1) 100%);  }
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(241, 188, 49, 1) 100%); }
   
   .form {
     justify-content: center;

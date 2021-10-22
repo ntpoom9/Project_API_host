@@ -38,7 +38,7 @@
   .card:last-of-type {
     margin-right: 0;
     /* background-image: linear-gradient(90deg, rgba(213, 147, 7, 1) 0%, rgba(251, 86, 231, 1) 100%);    border-radius: 10px; */
-    background-image: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgb(181, 175, 0) 100%);  }
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(241, 188, 49, 1) 100%); }
   
   .card-header{
     color: #ffffff;
