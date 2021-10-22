@@ -63,11 +63,6 @@ center{
 
 
 
-.customer{
-    display: grid;
-    grid-template-columns: repeat(4 ,1fr);
-    grid-gap: 1rem;
-}
 
 .card-title{
 font-size: 18px;
@@ -98,4 +93,71 @@ font-weight: bold;
     text-align: center;
     height: auto;
 
+}
+@media (max-width:1041px){
+    center{
+        width:1000px;
+        display: inline-table;
+       
+     }
+     
+}
+@media (max-width:1010px){
+    center{
+        width:900px;
+        display: inline-table;
+       
+     }
+     
+}
+@media (max-width:903px){
+    center{
+        width:800px;
+        display: inline-table;
+       
+     }
+     
+}
+@media (max-width:817px){
+    center{
+        width:700px;
+        display: inline-table;
+       
+     }
+     
+}
+@media (max-width:700px){
+    center{
+        width:700px;
+        /* display:inline-flex; */
+        padding: 10px;
+     }
+     
+}
+@media (max-width:414px){
+    center{
+        width: 790px;
+        padding: 10px;
+        display: inline-flex;
+     }
+     
+}
+@media (max-width:375px){
+    center{
+        width: 730px;
+        padding: 10px;
+        display: inline-flex;
+     }
+     
+}
+@media (max-width:360px){
+    center{
+        width:700px;
+        padding: 8px;
+       
+     }
+     .grid-container{
+padding: 0;
+     }
+     
 }
