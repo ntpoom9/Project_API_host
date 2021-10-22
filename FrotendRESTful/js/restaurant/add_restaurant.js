@@ -3,9 +3,9 @@ const add = async () => {
   const name = document.getElementById("name").value;         //เก็บค่าจาก input
   const type = document.getElementById("type").value;
   const imgURL = document.getElementById("imgURL").value;
-  if (id && name && type && imgURL) { //ตรวจสอบค่า ว่ามีค่าส่งมาไหม
+  if ( name && type && imgURL) { //ตรวจสอบค่า ว่ามีค่าส่งมาไหม
     const params = { //set พารามิเตอร์
-      id: id,
+      // id: id,
       name: name,
       type: type,
       imgURL: imgURL,

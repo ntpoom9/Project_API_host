@@ -54,7 +54,12 @@
     color: #ffffff;
   }
 
-
+ 
+center{
+   width:1000px;
+   display: inline-table;
+  
+}
 
 
 
@@ -84,9 +89,9 @@ font-weight: bold;
 }
 
 .grid-container{
-    background-image: url(../img/add_bg.jpg);
+    background-image: url(../img/addBG.jpg);
     padding: 3rem 0;
-  
+   
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;

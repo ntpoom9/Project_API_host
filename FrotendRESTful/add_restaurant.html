@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Grab Restaurant</title>
+    
+  
     <meta charset="utf-8" />
     <meta
       name="viewport"
@@ -24,9 +25,11 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo.png" />
     <link rel="stylesheet" href="css/add_restaurant.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <title>เพิ่มข้อมูลร้านอาหาร</title>
+
   </head>
   <body>
     <div class="container">
@@ -108,7 +111,7 @@
                 <a class="dropdown-item" href="add_restaurant.html"
                   >เพิ่มข้อมูลร้านอาหาร</a
                 >
-                <a class="dropdown-item" href="edit_restaurant.html"
+                <a class="dropdown-item" href="all_restaurant.html"
                   >แก้ไขข้อมูลร้านอาหาร</a
                 >
               </div>
@@ -126,7 +129,7 @@
               <div class="dropdown-menu" aria-labelledby="dropdown04">
                 <a class="dropdown-item" href="all_customer.html">แสดงผู้ใช้ทั้งหมด</a>
                 <a class="dropdown-item" href="add_customer.html">เพิ่มข้อมูลผู้ใช้</a>
-                <a class="dropdown-item" href="edit_customer.html">แก้ไขข้อมูลผู้ใช้</a>
+                <a class="dropdown-item" href="all_customer.html">แก้ไขข้อมูลผู้ใช้</a>
               </div>
             </li>
             <!-- <li class="nav-item"><a href="#" class="nav-link">Catalog</a></li>
@@ -141,58 +144,57 @@
 
     <!--------------- </section> ---------------->
     <div class="grid-container">
-      <div class="row form">
+     <center>
         <div class="col-6 card justify-content-center">
-          <h5 class="card-header">เพิ่มข้อมูลร้านอาหาร</h5>
+          <h5 class="card-header">เพิ่มข้อมูลอาหาร</h5>
           <div class="card-body">
             <form>
              
-              <div class="form-group">
-                <label class="label_add" for="id">Restaurant ID</label>
+             
                 <input
-                  type="text"
+                  type="hidden"
                   class="form-control"
                   id="id"
                   
                   placeholder="Enter Restaurant ID"
                 />
-              </div>
+              
               <div class="form-group">
-                <label class="label_add" for="name">Restaurant Name</label>
+                <label class="label_add" for="name">ชื่ออาหาร</label>
                 <input
                   type="text"
                   class="form-control"
                   id="name"
-                  placeholder="Enter Restaurant Name"
+                  placeholder="กรอกชื่ออาหาร"
                 />
               </div>
               <div class="form-group">
-                <label class="label_add" for="type">Restaurant Type</label>
+                <label class="label_add" for="type">ประเภทอาหาร</label>
                 <input
                   type="text"
                   class="form-control"
                   id="type"
-                  placeholder="Enter Restaurant Type"
+                  placeholder="กรอกประเภทอาหาร"
                 />
               </div>
               <div class="form-group">
-                <label class="label_add" for="imageurl">Restaurant Image Url</label>
+                <label class="label_add" for="imageurl">รูปภาพ URL</label>
                 <input
                   type="text"
                   class="form-control"
                   id="imageurl"
-                  placeholder="Enter Restaurant Imageurl"
+                  placeholder="ใส่ URL รูปภาพ"
                 />
               </div>
               <a href="" class="btn btn-success" onclick="add()"
-                >Add Restaurant</a
+                >บันทึก</a
               >
-              <a href="index.html" class="btn btn-danger">Cancel</a>
+              <a  href="index.html" class="btn btn-danger">ยกเลิก</a>
            
             </form>
           </div>
         </div>
-      </div>
+      </center>
     </div>
 
     <!-- <div class="container">

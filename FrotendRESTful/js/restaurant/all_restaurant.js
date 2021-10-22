@@ -21,7 +21,7 @@ const addRestaurants = (element) => {
     <img src="${element.imgURL}" class="card__img" alt="${element.name}">
     <div class="card-body">
       <h5 class="card-title">${element.name}</h5>
-      <p class="card-text">${element.type}</p>
+      <p class="card-text"><b>ประเภท: </b>${element.type}</p>
       <a href="#" class="btn btn-danger" onclick="deleteRestaurant(${element.id})">ลบ</a>
       <a href="edit_restaurant.html?id=${element.id}" class="btn btn-warning">แก้ไข</a>
     </div>
